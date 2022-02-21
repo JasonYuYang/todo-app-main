@@ -1,0 +1,45 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+  list-style: none;
+}
+
+body {
+  width: 100%;
+  min-height: 100vh;
+  box-sizing: border-box;
+}
+// resets
+ol,
+ul {
+  list-style: none;
+  padding: 0;
+}
+// remove decoration in a tags
+a {
+  outline: none;
+  text-decoration: none;
+}
+
+// for easier use of media elements
+img {
+  display: block;
+  max-width: 100%;
+}
+// inherit all the font
+input,
+button,
+textarea {
+  border: none;
+  font: inherit;
+  outline: none;
+}
+
+button {
+  background: none;
+  color: inherit;
+  cursor: pointer;
+}

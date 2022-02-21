@@ -1,0 +1,14 @@
+@keyframes checked {
+  20% {
+    transform: scale(0.9) translateY(-50%);
+  }
+  50% {
+    transform: scale(1.15) translateY(-50%);
+  }
+  75% {
+    transform: scale(0.9) translateY(-50%);
+  }
+  100% {
+    transform: scale(1) translateY(-50%);
+  }
+}

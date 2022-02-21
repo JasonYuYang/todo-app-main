@@ -1,0 +1,46 @@
+@use '../abstracts/' as *;
+@use '../base/' as *;
+
+.todos_form_container {
+  margin-bottom: rem(16);
+
+  position: relative;
+
+  .todos_check_wrapper {
+    position: absolute;
+    left: rem(20);
+    top: 50%;
+    display: inline-block;
+    border-radius: 50%;
+    width: fluid(20, 2vw, 24);
+    height: fluid(20, 2vw, 24);
+    background-color: $lg-b;
+    transform: translate(0, -50%);
+    transition: all 0.5s ease;
+    background: linear-gradient((var(--todobox-color), var(--todobox-color)))
+        padding-box,
+      /*this is your background*/
+        linear-gradient(
+          to right bottom,
+          hsl(192, 100%, 67%),
+          hsl(280, 87%, 65%)
+        )
+        border-box;
+    border: 1px solid transparent;
+  }
+
+  #todos_input {
+    color: var(--color-one);
+    caret-color: auto;
+    height: fluid(48, 10vw, 64);
+    padding-left: fluid(52, 6vw, 72);
+    width: 100%;
+    transition: background-color 0.5s ease;
+    background-color: var(--todobox-color);
+    border-radius: 4px;
+    &:focus {
+      outline: 3px dashed var(--color-outline);
+      outline-offset: 3px;
+    }
+  }
+}

@@ -1,0 +1,33 @@
+// colors
+$b-blue: hsl(220, 98%, 61%);
+// background-image
+$check-bg: linear-gradient(to right, hsl(192, 100%, 67%), hsl(280, 87%, 65%));
+
+// light theme
+$vl-gray: hsl(0, 0%, 98%);
+$vlg-blue: hsl(236, 33%, 92%);
+$lg-blue: hsl(233, 11%, 84%);
+$dg-blue: hsl(236, 9%, 61%);
+$vdg-blue: hsl(235, 19%, 35%);
+//dark theme
+$vd-blue: hsl(235, 21%, 11%);
+$vdb-blue: hsl(235, 24%, 19%);
+$lg-b: hsl(234, 39%, 85%);
+$lg-bh: hsl(236, 33%, 92%);
+$dg-b: hsl(234, 11%, 52%);
+$vdg-b: hsl(233, 14%, 35%);
+$vdg-b2: hsl(237, 14%, 26%);
+
+$shadow: hsla(0, 0%, 56.1%, 0.1);
+
+:root {
+  --body-color: $vd-blue;
+  --todobox-color: $vdb-blue;
+  --todotext-color: $lg-b;
+  --todotext-color-hover: $lg-bh;
+  --color-one: $dg-b;
+  --color-two: $vdg-b;
+  --color-three: $vdg-b2;
+  --color-outline: #ffffff;
+  --shadow: transparent;
+}
