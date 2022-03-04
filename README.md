@@ -37,7 +37,7 @@ Users should be able to:
 
 ### Links
 
-- Live Site URL: [Live site of the challenge hosted here](https://infallible-fermat-c5b67b.netlify.app/)
+- Live Site URL: [Live site of the challenge hosted here](https://todo-main-yuyang.netlify.app/)
 
 ## My process
 
