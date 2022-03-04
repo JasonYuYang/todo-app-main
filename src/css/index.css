@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;500;600;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;500;600;700&display=swap");
 :root {
   --body-color: $vd-blue;
   --todobox-color: $vdb-blue;
@@ -14,38 +14,38 @@
 @-webkit-keyframes checked {
   20% {
     -webkit-transform: scale(0.9) translateY(-50%);
-    transform: scale(0.9) translateY(-50%);
+            transform: scale(0.9) translateY(-50%);
   }
   50% {
     -webkit-transform: scale(1.15) translateY(-50%);
-    transform: scale(1.15) translateY(-50%);
+            transform: scale(1.15) translateY(-50%);
   }
   75% {
     -webkit-transform: scale(0.9) translateY(-50%);
-    transform: scale(0.9) translateY(-50%);
+            transform: scale(0.9) translateY(-50%);
   }
   100% {
     -webkit-transform: scale(1) translateY(-50%);
-    transform: scale(1) translateY(-50%);
+            transform: scale(1) translateY(-50%);
   }
 }
 
 @keyframes checked {
   20% {
     -webkit-transform: scale(0.9) translateY(-50%);
-    transform: scale(0.9) translateY(-50%);
+            transform: scale(0.9) translateY(-50%);
   }
   50% {
     -webkit-transform: scale(1.15) translateY(-50%);
-    transform: scale(1.15) translateY(-50%);
+            transform: scale(1.15) translateY(-50%);
   }
   75% {
     -webkit-transform: scale(0.9) translateY(-50%);
-    transform: scale(0.9) translateY(-50%);
+            transform: scale(0.9) translateY(-50%);
   }
   100% {
     -webkit-transform: scale(1) translateY(-50%);
-    transform: scale(1) translateY(-50%);
+            transform: scale(1) translateY(-50%);
   }
 }
 *,
@@ -95,7 +95,7 @@ button {
 
 body {
   font-size: clamp(0.75rem, 2vw, 1.125rem);
-  font-family: 'Josefin Sans', sans-serif;
+  font-family: "Josefin Sans", sans-serif;
   font-weight: 400;
   display: flex;
   justify-content: center;
@@ -104,8 +104,7 @@ body {
 
 .background {
   transition: all 0.5s ease;
-  background: var(--body-color) var(--background-image) no-repeat top/100%
-    clamp(12.5rem, 24vw, 18.75rem);
+  background: var(--body-color) var(--background-image) no-repeat top/100% clamp(12.5rem, 24vw, 18.75rem);
 }
 
 #root {
@@ -124,11 +123,11 @@ body.lightmode {
   --color-four: $vdb-blue;
   --color-outline: hsl(235, 19%, 35%);
   --shadow: hsla(0, 0%, 56.1%, 0.1);
-  --background-image: url('../images/bg-mobile-light.jpg');
+  --background-image: url("../../images/bg-mobile-light.jpg");
 }
 @media only screen and (min-width: 37.5em) {
   body.lightmode {
-    --background-image: url('../images/bg-desktop-light.jpg');
+    --background-image: url("../../images/bg-desktop-light.jpg");
   }
 }
 
@@ -143,11 +142,11 @@ body.darkmode {
   --color-four: hsl(235, 21%, 11%);
   --color-outline: #ffffff;
   --shadow: transparent;
-  --background-image: url('../images/bg-mobile-dark.jpg');
+  --background-image: url("../../images/bg-mobile-dark.jpg");
 }
 @media only screen and (min-width: 37.5em) {
   body.darkmode {
-    --background-image: url('../images/bg-desktop-dark.jpg');
+    --background-image: url("../../images/bg-desktop-dark.jpg");
   }
 }
 
@@ -183,7 +182,7 @@ body.darkmode {
   top: 50%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
 }
 
 .todos_form_container {
@@ -200,11 +199,9 @@ body.darkmode {
   height: clamp(1.25rem, 2vw, 1.5rem);
   background-color: #cacde8;
   -webkit-transform: translate(0, -50%);
-  transform: translate(0, -50%);
+          transform: translate(0, -50%);
   transition: all 0.5s ease;
-  background: linear-gradient(var(--todobox-color), var(--todobox-color))
-      padding-box,
-    linear-gradient(to right bottom, #57ddff, #c058f3) border-box;
+  background: linear-gradient(var(--todobox-color), var(--todobox-color)) padding-box, linear-gradient(to right bottom, #57ddff, #c058f3) border-box;
   border: 1px solid transparent;
 }
 .todos_form_container #todos_input {
@@ -264,20 +261,16 @@ body.darkmode {
   display: none;
   -webkit-appearance: checkbox;
 }
-.todo_item
-  .todo_check_button--input:checked
-  ~ .todo_check_button--input-button::before {
+.todo_item .todo_check_button--input:checked ~ .todo_check_button--input-button::before {
   background: linear-gradient(to right bottom, #57ddff, #c058f3) padding-box;
   border: none;
   -webkit-animation: checked 0.3s ease-in-out forwards;
-  animation: checked 0.3s ease-in-out forwards;
+          animation: checked 0.3s ease-in-out forwards;
 }
-.todo_item
-  .todo_check_button--input:checked
-  ~ .todo_check_button--input-button::after {
+.todo_item .todo_check_button--input:checked ~ .todo_check_button--input-button::after {
   opacity: 1;
   -webkit-animation: checked 0.3s ease-in-out forwards;
-  animation: checked 0.3s ease-in-out forwards;
+          animation: checked 0.3s ease-in-out forwards;
 }
 .todo_item .todo_check_button--description {
   display: inline-block;
@@ -322,12 +315,10 @@ body.darkmode {
   width: 100%;
 }
 .todo_item .todo_check_button--input-button:hover:before {
-  background: linear-gradient(var(--todobox-color), var(--todobox-color))
-      padding-box,
-    linear-gradient(to right bottom, #57ddff, #c058f3) border-box;
+  background: linear-gradient(var(--todobox-color), var(--todobox-color)) padding-box, linear-gradient(to right bottom, #57ddff, #c058f3) border-box;
 }
 .todo_item .todo_check_button--input-button::before {
-  content: '';
+  content: "";
   position: absolute;
   left: 1.25rem;
   top: 50%;
@@ -337,17 +328,15 @@ body.darkmode {
   height: clamp(1.25rem, 2vw, 1.5rem);
   background-color: #cacde8;
   -webkit-transform: translate(0, -50%);
-  transform: translate(0, -50%);
-  background: linear-gradient(var(--todobox-color), var(--todobox-color))
-      padding-box,
-    linear-gradient(to right bottom, #cacde8, #cacde8) border-box;
+          transform: translate(0, -50%);
+  background: linear-gradient(var(--todobox-color), var(--todobox-color)) padding-box, linear-gradient(to right bottom, #cacde8, #cacde8) border-box;
   border: 1px solid transparent;
   cursor: pointer;
   z-index: 1;
 }
 .todo_item .todo_check_button--input-button::after {
-  content: '';
-  background-image: url('../images/icon-check.svg');
+  content: "";
+  background-image: url("../../images/icon-check.svg");
   background-repeat: no-repeat;
   background-position: center;
   position: absolute;
@@ -357,18 +346,22 @@ body.darkmode {
   top: 50%;
   border-radius: 50%;
   -webkit-transform: translate(0, -50%);
-  transform: translate(0, -50%);
+          transform: translate(0, -50%);
   z-index: 2;
   opacity: 0;
   transition: all 0.3s ease;
 }
 .todo_item .todo_remove {
-  background: url('../images/icon-cross.svg') no-repeat 50%;
-  background-size: cover;
   margin-right: clamp(1.25rem, 3vw, 1.5rem);
-  height: 0.8125rem;
-  width: 0.8125rem;
+  height: 1.5625rem;
+  width: 1.5625rem;
+  border-radius: 0.3125rem;
   display: inline-block;
+  padding: 0.1875rem;
+  transition: all 0.3s;
+}
+.todo_item .todo_remove:hover {
+  background-color: #cacde8;
 }
 
 .todo_options--state {
@@ -442,19 +435,19 @@ body.darkmode {
 @keyframes checked {
   20% {
     -webkit-transform: scale(0.9) translateY(-50%);
-    transform: scale(0.9) translateY(-50%);
+            transform: scale(0.9) translateY(-50%);
   }
   50% {
     -webkit-transform: scale(1.15) translateY(-50%);
-    transform: scale(1.15) translateY(-50%);
+            transform: scale(1.15) translateY(-50%);
   }
   75% {
     -webkit-transform: scale(0.9) translateY(-50%);
-    transform: scale(0.9) translateY(-50%);
+            transform: scale(0.9) translateY(-50%);
   }
   100% {
     -webkit-transform: scale(1) translateY(-50%);
-    transform: scale(1) translateY(-50%);
+            transform: scale(1) translateY(-50%);
   }
 }
 /*# sourceMappingURL=index.css.map */

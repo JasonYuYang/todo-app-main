@@ -1,3 +1,4 @@
+import RemoveIcon from '../images/icon-cross.svg';
 import React, { useRef, useState, useEffect, useCallback } from 'react';
 
 import { todoType, useTodoContext } from '../store/TodoContext';
@@ -107,7 +108,9 @@ const TodoItem = ({ todo }: { todo: todoType }) => {
           onClick={() => {
             dispatch({ type: 'REMOVE_TODO', payload: todo });
           }}
-        ></button>
+        >
+          <img src={RemoveIcon} alt='remove-todo' />
+        </button>
       </div>
     </React.Fragment>
   );

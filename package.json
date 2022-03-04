@@ -27,7 +27,7 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "gulp": "gulp",
-    "dev": "npm-run-all start gulp"
+    "dev": "npm-run-all gulp start"
   },
   "eslintConfig": {
     "extends": [

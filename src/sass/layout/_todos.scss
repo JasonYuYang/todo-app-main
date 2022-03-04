@@ -45,11 +45,7 @@
       -webkit-appearance: checkbox;
     }
     &--input:checked ~ .todo_check_button--input-button::before {
-      background: linear-gradient(
-          to right bottom,
-          hsl(192, 100%, 67%),
-          hsl(280, 87%, 65%)
-        )
+      background: linear-gradient(to right bottom, hsl(192, 100%, 67%), hsl(280, 87%, 65%))
         padding-box;
       border: none;
       animation: checked 0.3s ease-in-out forwards;
@@ -103,17 +99,9 @@
       cursor: pointer;
       width: 100%;
       &:hover:before {
-        background: linear-gradient(
-              (var(--todobox-color), var(--todobox-color))
-            )
-            padding-box,
+        background: linear-gradient((var(--todobox-color), var(--todobox-color))) padding-box,
           /*this is your background*/
-            linear-gradient(
-              to right bottom,
-              hsl(192, 100%, 67%),
-              hsl(280, 87%, 65%)
-            )
-            border-box;
+            linear-gradient(to right bottom, hsl(192, 100%, 67%), hsl(280, 87%, 65%)) border-box;
       }
       &::before {
         content: '';
@@ -126,10 +114,8 @@
         height: fluid(20, 2vw, 24);
         background-color: $lg-b;
         transform: translate(0, -50%);
-        background: linear-gradient(var(--todobox-color), var(--todobox-color))
-            padding-box,
-          /*this is your background*/
-            linear-gradient(to right bottom, $lg-b, $lg-b) border-box;
+        background: linear-gradient(var(--todobox-color), var(--todobox-color)) padding-box,
+          /*this is your background*/ linear-gradient(to right bottom, $lg-b, $lg-b) border-box;
         border: 1px solid transparent;
         cursor: pointer;
         z-index: 1;
@@ -153,12 +139,16 @@
     }
   }
   .todo_remove {
-    background: url('../../images/icon-cross.svg') no-repeat 50%;
-    background-size: cover;
     margin-right: fluid(20, 3vw, 24);
-    height: rem(13);
-    width: rem(13);
+    height: rem(25);
+    width: rem(25);
+    border-radius: rem(5);
     display: inline-block;
+    padding: rem(3);
+    transition: all 0.3s;
+    &:hover {
+      background-color: $lg-b;
+    }
   }
 }
 
@@ -206,7 +196,6 @@
       // display: flex;
       justify-content: space-around;
       box-shadow: none;
-
       height: auto;
       margin-bottom: 0;
     }

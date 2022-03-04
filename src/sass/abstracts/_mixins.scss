@@ -1,3 +1,5 @@
+@use 'sass:math';
+
 @mixin abcenter {
   position: absolute;
   left: 50%;
@@ -5,12 +7,12 @@
   transform: translate(-50%, -50%);
 }
 @mixin respondMax($breakpoint) {
-  @media only screen and (max-width: $breakpoint / 16px *1em) {
+  @media only screen and (max-width: (math.div($breakpoint,16px) * 1em)) {
     @content;
   }
 }
 @mixin respondMin($breakpoint) {
-  @media only screen and (min-width: $breakpoint / 16px *1em) {
+  @media only screen and (min-width: (math.div($breakpoint , 16px) * 1em)) {
     @content;
   }
 }
